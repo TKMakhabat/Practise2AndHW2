@@ -45,6 +45,8 @@ public class PriceCalculator {
             discountOptions.append("\n").append(discount);
         }
         System.out.println(discountOptions);
+        System.out.println("bla bla bla");
+
         price.setDiscounts(scanner.next().trim());
 
         return price;
@@ -67,6 +69,10 @@ public class PriceCalculator {
         } else if (price.getSeason().equalsIgnoreCase(Season.WINTER.name())) {
             return  3;
         } else return 4;
+
     }
+
+
+
 
 }
